@@ -19,6 +19,13 @@
   border: 1px solid transparent;
   transition: var(--transition);
 }
+.contact__option h5{
+  color: white;
+}
+
+.contact__option h4{
+  color: white;
+}
 
 .contact__option:hover {
   background: transparent;

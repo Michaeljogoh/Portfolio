@@ -10,12 +10,14 @@
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  color: white;
 }
 
 .experience__container > div:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
+  color: white;
 }
 
 .experience__container > div h3 {

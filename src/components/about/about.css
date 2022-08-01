@@ -35,6 +35,10 @@
   gap: 1.5rem;
 }
 
+.text{
+  color: white;
+}
+
 .about__card {
   background: var(--color-bg-variant);
   border: 1px solid transparent;
@@ -45,9 +49,12 @@
 }
 
 .about__card:hover {
-  background: transparent;
+ background-color: black;
   border-color: var(--color-primary-variant);
   cursor: default;
+ 
+ 
+  
 }
 
 .about__icon {
@@ -63,6 +70,9 @@
 .about__card small {
   font-size: 0.7rem;
   color: var(--color-light);
+}
+.white{
+  color: white;
 }
 
 .about__content p {

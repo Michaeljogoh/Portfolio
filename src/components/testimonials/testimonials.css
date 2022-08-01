@@ -20,6 +20,10 @@
   user-select: none;
 }
 
+.testimonial h5{
+  color: white;
+}
+
 .client__review {
   color: var(--color-light);
   font-weight: 300;

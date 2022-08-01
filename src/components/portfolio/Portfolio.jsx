@@ -1,7 +1,7 @@
 import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
+import IMG2 from '../../assets/amazon1.png'
 import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.jpg'
@@ -13,44 +13,44 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels"
+    title: 'Twitter-Clone',
+    github: "https://github.com/Michaeljogoh/twitter-clone",
+    demo: ""
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Charts templates & infographics in Figma',
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels"
+    title: 'Amazon Aws S3',
+    github: "https://github.com/Michaeljogoh/Aws-s3",
+    demo: ""
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Figma dashboard UI kit for data design web apps',
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels"
+    title: 'File-Upload-API',
+    github: "https://github.com/Michaeljogoh/file-upload-api",
+    demo: "https://documenter.getpostman.com/view/21519072/UzXM1yRi"
   },
   {
     id: 4,
     image: IMG4,
-    title: 'Maintaining tasks and tracking progress',
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels"
+    title: 'Tic-Tac-Toe Game',
+    github: "https://github.com/Michaeljogoh/React-Tic_tac_toe",
+    demo: "https://react-tac-tac-toe.vercel.app/"
   },
   {
     id: 5,
     image: IMG5,
-    title: 'Charts templates & infographics in Figma',
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels"
+    title: 'Todo-List',
+    github: "https://github.com/Michaeljogoh/React-Todo-List",
+    demo: "https://react-todo-list-rose.vercel.app/"
   },
   {
     id: 6,
     image: IMG6,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels"
+    title: 'Node-Authenication',
+    github: "https://github.com/Michaeljogoh/Node-Passport-authentication",
+    demo: ""
   },
 ]
 
