@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
@@ -12,6 +12,9 @@ import Link from "next/link";
 import Image from "next/image";
 import projectImage from "@/public/ppo.png"
 import WorkSlideBtn from "@/components/workSlideBtn";
+import WOW from 'wowjs';
+import 'wowjs/css/libs/animate.css';
+
 
 
 
@@ -91,12 +94,20 @@ const Work = () => {
 
     const handleSlideChange = (swiper) =>{
           const currentIndex = swiper.activeIndex;
-
           setProject(projects[currentIndex]);
     }
 
+    useEffect(() => {
+      const wow = new WOW.WOW({live: false});
+      wow.init();
+      
+    }, []);
+    
+   
+    
     return (
       <>
+    
         <motion.section initial={{opacity:0}} animate={{opacity:1, transition:{delay:1.5, duration: 0.3, ease:"easeIn"}}} 
         className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0" 
          >
@@ -184,7 +195,7 @@ const Work = () => {
         <motion.section initial={{opacity:0}} animate={{opacity:1, transition:{delay:1.5, duration: 0.3, ease:"easeIn"}}} 
         className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0" 
          >
-           <div className="container mx-auto">
+           <div className="container mx-auto wow fadeInUp">
             <div className="flex flex-col xl:flex-row xl:gap-[30px]">
                 <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
                     <div className="flex flex-col gap-[30px] h-[50%]">

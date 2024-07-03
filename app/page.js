@@ -4,9 +4,11 @@ import {FiDownload} from "react-icons/fi";
 import Photo from "@/components/photo";
 import Stats from "@/components/stats";
 import { Button } from "@/components/ui/button";
+import Script from "next/script";
 
 export default function Home() {
   return (
+    <>
  <section className="h-full">
    <div className="container mx-auto h-full">
      <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
@@ -38,5 +40,6 @@ export default function Home() {
    <Stats />
    </div>
  </section>
+ </>
   );
 }
