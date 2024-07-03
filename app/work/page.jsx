@@ -107,28 +107,7 @@ const Work = () => {
     
     return (
       <>
-      
-           <div className="wow wow bounceInUp" data-wow-delay="2.0s">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Nisi itaque, perferendis facilis repudiandae maxime veritatis totam vero
-          laboriosam voluptatibus ipsum sit id quaerat voluptatum, facere pariatur
-          dolores consectetur reiciendis impedit alias, deserunt iste debitis amet velit.
-          Facere consectetur temporibus esse, magni iure cumque ut dignissimos. Doloribus
-          maxime voluptatibus veniam illo vero repellendus expedita alias fugiat impedit,
-          praesentium voluptate, molestiae ab. Vero earum excepturi asperiores minima atque
-          tempore dolores veritatis numquam quisquam officiis, reiciendis eius eveniet pariatur
-          odio temporibus delectus praesentium et cupiditate quaerat rerum animi tenetur? Nisi
-          modi reiciendis ipsum provident vitae obcaecati odio minus vel fuga unde veniam deleniti
-          quaerat vero tenetur, voluptate incidunt perferendis ut animi ab sit mollitia. Deleniti
-          nulla magnam harum ad expedita impedit consequuntur ex libero inventore fuga, distinctio
-          nisi, ducimus voluptas! Natus totam expedita, quisquam dicta recusandae ducimus voluptates
-          unde asperiores eius rem dolorum cumque eligendi perferendis impedit accusantium! Ducimus
-          dolores doloribus in hic doloremque dignissimos. Dolorum at incidunt, veritatis nisi rerum
-          vel molestias odit harum ad in labore inventore, illum sapiente sit laborum possimus qui
-          debitis dolores tempora ipsam ullam odio! Ducimus itaque hic est explicabo reiciendis
-          assumenda soluta maxime quasi labore, aliquid consequuntur eos molestiae ipsum dolorem
-          veritatis saepe adipisci placeat. Eum.
-        </div>
+    
         <motion.section initial={{opacity:0}} animate={{opacity:1, transition:{delay:1.5, duration: 0.3, ease:"easeIn"}}} 
         className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0" 
          >
