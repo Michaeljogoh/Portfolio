@@ -98,10 +98,6 @@ const projects = [
 
 
 
-
-
-
-
 const Resume = () => {
    
     return (
@@ -217,14 +213,14 @@ const Resume = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px] mt-7">
                  {projects.filter((project) => project.category === "backend").map((project, index) =>{
                     return(
-                <div class="portfolio-wrap">
+                <div class="portfolio-wrap" key={index}>
                     <div class="portfolio-img">
-                    <Image src={company} alt="Image"/>
+                    <Image src={project.image} alt="Image"/>
                     </div>
                     <div className="myGrid">
                     <div class="grid grid-cols-3 gap-4">
                    <div className="col-span-2  my-3 ">
-                    <h3 className="text-black font-extrabold ml-4">Spotify Clone</h3>
+                    <h3 className="text-black font-extrabold ml-4">{project.title}</h3>
                    </div>
  
                  <div className="flex justify-center gap-2 my-3">
@@ -235,7 +231,7 @@ const Resume = () => {
                                         <BsArrowUpRight className="text-white text-2xl group-hover:text-accent"/>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                        <p className="bg-black rounded-md">Live project</p>
+                                        <Link className="bg-black rounded-md">{project.live}</Link>
                                     </TooltipContent>
                                 </Tooltip>
                           </TooltipProvider>
@@ -246,7 +242,7 @@ const Resume = () => {
                                     <BsGithub className="text-white text-2xl group-hover:text-accent"/>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                        <p className="bg-black rounded-md">GitHub</p>
+                                        <Link className="bg-black rounded-md">{project.github}</Link>
                                     </TooltipContent>
                                 </Tooltip>
                           </TooltipProvider>
