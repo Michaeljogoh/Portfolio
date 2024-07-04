@@ -115,6 +115,9 @@ const Resume = () => {
                     <TabsTrigger value="backend">Backend</TabsTrigger>                       
                     <TabsTrigger value="api">API</TabsTrigger>                       
                 </TabsList>
+                <motion.section initial={{opacity:0}} animate={{opacity:1,
+                 transition:{delay:1.6, duration: 0.4, ease:"easeIn"}}} >
+
                 <div className="min-h-[70vh] w-full">
                  {/* ALL */}
                 <TabsContent value="all" className="w-full">
@@ -302,6 +305,8 @@ const Resume = () => {
                  </div>
                 </TabsContent>
                 </div>
+
+                </motion.section>
             </Tabs>
         </div>
         </>
