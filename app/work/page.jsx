@@ -12,8 +12,8 @@ import Link from "next/link";
 import Image from "next/image";
 import projectImage from "@/public/ppo.png"
 import WorkSlideBtn from "@/components/workSlideBtn";
-import WOW from 'wowjs';
-import 'wowjs/css/libs/animate.css';
+// import WOW from 'wowjs';
+// import 'wowjs/css/libs/animate.css';
 
 
 
@@ -97,11 +97,11 @@ const Work = () => {
           setProject(projects[currentIndex]);
     }
 
-    useEffect(() => {
-      const wow = new WOW.WOW({live: false});
-      wow.init();
+    // useEffect(() => {
+    //   const wow = new WOW.WOW({live: false});
+    //   wow.init();
       
-    });
+    // });
     
    
     
