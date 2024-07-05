@@ -6,8 +6,8 @@ import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix-ui/react-tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
-// import WOW from 'wowjs';
-// import 'wowjs/css/libs/animate.css';
+import WOW from 'wowjs';
+import 'wowjs/css/libs/animate.css';
 
 
 // about data
@@ -173,12 +173,13 @@ const skills = {
 
 const Resume = () => {
 
-    //   useEffect(() => {
-    //   const wow = new WOW.WOW({live: false});
-    //   wow.init();
-    //   }); 
-    // data-wow-delay="2.0s"
-
+      useEffect(() => {
+        if (typeof window !== "undefined") { 
+            const wow = new WOW.WOW({live: false});
+            wow.init();
+         }
+      }); 
+    
 
     return (
         <>
@@ -198,8 +199,8 @@ const Resume = () => {
                     <TabsTrigger value="about">About me </TabsTrigger>                       
                 </TabsList>
                 <div className="min-h-[70vh] w-full">
-                    {/* experience */}
-                    <TabsContent value="experience" className="w-full">
+                {/* experience */}
+                <TabsContent value="experience" className="w-full">
         
         <ScrollArea className="h-[500px]">
         <div className="experience" id="experience">
@@ -209,7 +210,7 @@ const Resume = () => {
                {experience.items.map((item, index) =>{
                 return (
                 <div className="timeline mt-4" key={index} >
-                    <div className={`wow ${item.slide}`} > 
+                    <div className={`wow ${item.slide}`} data-wow-delay="2.0s"> 
                    <div className={`timeline-item ${item.side}`}>
                         <div className="timeline-text ">
                             <div className="timeline-date">{item.duration}</div>
