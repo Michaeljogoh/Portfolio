@@ -101,7 +101,7 @@ const Work = () => {
       const wow = new WOW.WOW({live: false});
       wow.init();
       
-    }, []);
+    });
     
    
     
