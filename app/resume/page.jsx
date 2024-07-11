@@ -57,30 +57,37 @@ const experience = {
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae error nemo",
     items: [
         {
-            company:"Tech Solutions Inc",
+            company:"Elonatech",
             position:"Full Stack Developer",
-            duration:"2022-2034",
+            duration:"July 2023 - May 2024",
+            side:"right",
+            slide:"slideInLeft"
+        },
+        {
+            company:"EGA Tech Limited",
+            position:"Automation Engineer",
+            duration:"May 2023 - Sept 2023",
             side:"left",
             slide:"slideInLeft"
         },
         {
-            company:"Tech Solutions Inc",
-            position:"Full Stack Developer",
-            duration:"2022-7764",
+            company:"Bonshare",
+            position:"Backend Developer (Node.js)",
+            duration:"Jan 2023 - May 2023",
             side:"right",
             slide:"slideInRight"
         },
         {
-            company:"Tech Solutions Inc",
-            position:"Full Stack Developer",
-            duration:"2022- present",
+            company:"Robots Limited",
+            position:"Junior Software Engineer",
+            duration:"Nov 2021 - Dec 2022",
             side:"left",
             slide:"slideInLeft"
         },
         {
-            company:"Tech Solutions Inc",
-            position:"Full Stack Developer",
-            duration:"2022- present",
+            company:"The Code Center",
+            position:"Backend Developer Intern",
+            duration:"Jan 2021- July 2021",
             side:"right",
             slide:"slideInRight"
         },
@@ -208,8 +215,8 @@ const Resume = () => {
                    <div className={`timeline-item ${item.side}`}>
                         <div className="timeline-text ">
                             <div className="timeline-date">{item.duration}</div>
-                            <h2 className="text-white">{item.position}</h2>
-                            <h4 className="text-white">{item.company}, San Francisco, CA</h4>
+                            <h3 className="text-white font-bold">{item.position}</h3>
+                            <h6 className="text-white font-light">{item.company}</h6>
                         </div>
                     </div>
                     </div>
