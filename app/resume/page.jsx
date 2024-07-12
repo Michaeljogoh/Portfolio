@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 // import WOW from 'wowjs';
 // import 'wowjs/css/libs/animate.css';
 
-
 // about data
 const about = {
     title:"About me",
@@ -54,41 +53,48 @@ const about = {
 const experience = {
     icon:"",
     title:"My Experience",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae error nemo",
+    description:"",
     items: [
         {
-            company:"Elonatech",
+            company:"Elonatech - Lagos, Lagos",
             position:"Full Stack Developer",
             duration:"July 2023 - May 2024",
             side:"right",
             slide:"slideInLeft"
         },
         {
-            company:"EGA Tech Limited",
+            company:"EGA Tech Limited - UK, London",
             position:"Automation Engineer",
             duration:"May 2023 - Sept 2023",
             side:"left",
             slide:"slideInLeft"
         },
         {
-            company:"Bonshare",
-            position:"Backend Developer (Node.js)",
-            duration:"Jan 2023 - May 2023",
+            company:"Enseedling - UK, London",
+            position:"Backend Developer",
+            duration:"April 2023 - July 2023",
             side:"right",
-            slide:"slideInRight"
-        },
-        {
-            company:"Robots Limited",
-            position:"Junior Software Engineer",
-            duration:"Nov 2021 - Dec 2022",
-            side:"left",
             slide:"slideInLeft"
         },
         {
-            company:"The Code Center",
+            company:"Bonshare - Instanbul, Turkey",
+            position:"Backend Developer (Node.js)",
+            duration:"Jan 2023 - May 2023",
+            side:"left",
+            slide:"slideInRight"
+        },
+        {
+            company:"Robots Limited - Yaba, Lagos",
+            position:"Junior Software Engineer",
+            duration:"Nov 2021 - Dec 2022",
+            side:"right",
+            slide:"slideInLeft"
+        },
+        {
+            company:"The Code Center - Ikeja, Lagos",
             position:"Backend Developer Intern",
             duration:"Jan 2021- July 2021",
-            side:"right",
+            side:"left",
             slide:"slideInRight"
         },
     ]
@@ -99,29 +105,27 @@ const experience = {
 const eduction = {
     icon:"",
     title:"My Education",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae error nemo",
+    description:"Tech Certification",
     items: [
         {
-            institution:"Online Course Platform",
-            degree:"Full Stack Developer",
+            institution:"TestDome",
+            degree:"Node.js",
             duration:"2023"
         },
         {
-            institution:"Codecademy",
-            degree:"Back-end developer",
-            duration:"2023"
+            institution:"HackerRank",
+            degree:"JavaScripts Basics",
+            duration:"Feb 2023"
         },
-    
         {
-            institution:"Codecademy",
-            degree:"Back-end developer",
-            duration:"2023"
+            institution:"FreeCodeCamp",
+            degree:"JavaScript Algorithms and Data Structures",
+            duration:"March 2022"
         },
-    
         {
-            institution:"Codecademy",
-            degree:"Back-end developer",
-            duration:"2023"
+            institution:"The Code Center",
+            degree:"Web Development",
+            duration:"July 2021"
         },
     
     ]
@@ -131,7 +135,7 @@ const eduction = {
 // skill
 const skills = {
     title:"My Skills",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero nihil facilis",
+    description:"",
     skillList:[
         {
           icon:< FaHtml5 />,
@@ -165,14 +169,7 @@ const skills = {
           icon:< SiTailwindcss />,
           name:"tailwind.css",
         },
-        {
-          icon:< FaHtml5 />,
-          name:"html 5",
-        },
-        {
-          icon:< FaHtml5 />,
-          name:"html 5",
-        },
+    
     ]
 }
 
@@ -180,12 +177,9 @@ const skills = {
 
 const Resume = () => {
 
-
-
     return (
         <>
-        
-       
+
         <motion.div 
         initial={{ opacity: 0}} 
         animate={{opacity:1, transition:{ delay:1.5, duration: 0.3, ease:"easeIn" }}}

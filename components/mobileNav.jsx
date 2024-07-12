@@ -19,6 +19,10 @@ const links = [
         path:"/portfolio"
     },
     {
+        name:"services",
+        path:"/services"
+    },
+    {
         name:"work",
         path:"/work"
     },
@@ -26,10 +30,7 @@ const links = [
         name:"contact",
         path:"/contact"
     },
-    {
-        name:"services",
-        path:"/services"
-    },
+  
 ]
 
 const  MobileNav = () => {

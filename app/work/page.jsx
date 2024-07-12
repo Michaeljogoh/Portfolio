@@ -4,87 +4,49 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import {Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
 import {BsArrowUpRight, BsGithub} from "react-icons/bs";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip"
-
 import Link from "next/link";
 import Image from "next/image";
-import projectImage from "@/public/ppo.png"
 import WorkSlideBtn from "@/components/workSlideBtn";
-// import WOW from 'wowjs';
-// import 'wowjs/css/libs/animate.css';
-
+import projectImage from "@/public/ppo.png"
+import taskTracker from "@/public/task-tracker.png"
+import portfolio from "@/public/portfolio.png"
 
 
 
 const projects = [
     {
       num:"01",
+      category:"Frontend",
+      title:"Task Tracker",
+      description:"A simplified, interactive web application that allows users to view, add, edit, and delete items from a list",
+      stack:[{name:"Next.js"}, {name:"Tailwind"}, {name:"Typescript"} , {name:"Jest"} , {name:"Json-Server"}],
+      image:taskTracker,
+      live:"https://task-tracker-michaeljogohs-projects.vercel.app",
+      github:"https://github.com/Michaeljogoh/Task-Tracker",
+
+    },
+    {
+      num:"02",
+      category:"Frontend",
+      title:"Michael's Portfolio",
+      description:"My personal portfolio website",
+      stack:[{name:"Next.js"}, {name:"Tailwind"}, {name:"Framer-motion"}],
+      image:portfolio,
+      live:"https://michaeljogoh.vercel.app/",
+      github:"https://github.com/Michaeljogoh/Portfolio",
+    },
+    {
+      num:"03",
       category:"frontend",
       title:"project 1",
       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dolore",
       stack:[{name:"Html 5"}, {name:"Css 3"}, {name:"Javascript"}],
       image:projectImage,
       live:"",
-      github:""
-
+      github:"",
     },
-    {
-      num:"02",
-      category:"IAAS",
-      title:"project 1",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dolore",
-      stack:[{name:"Html 5"}, {name:"Css 3"}, {name:"Javascript"}],
-      image:projectImage,
-      live:"",
-      github:""
-
-    },
-    {
-      num:"03",
-      category:"Saas",
-      title:"project 1",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dolore",
-      stack:[{name:"Html 5"}, {name:"Css 3"}, {name:"Javascript"}],
-      image:projectImage,
-      live:"",
-      github:""
-
-    },
-    {
-      num:"04",
-      category:"full stack project",
-      title:"project 1",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dolore",
-      stack:[{name:"Html 5"}, {name:"Css 3"}, {name:"Javascript"}],
-      image:projectImage,
-      live:"",
-      github:""
-
-    },
-    {
-      num:"05",
-      category:"Graphql api",
-      title:"project 1",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dolore",
-      stack:[{name:"Html 5"}, {name:"Css 3"}, {name:"Javascript"}],
-      image:projectImage,
-      live:"",
-      github:""
-
-    },
-    {
-      num:"06",
-      category:"full stack",
-      title:"project 1",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dolore",
-      stack:[{name:"Html 5"}, {name:"Css 3"}, {name:"Javascript"}],
-      image:projectImage,
-      live:"",
-      github:""
-
-    }
 ]
 
 
@@ -95,16 +57,8 @@ const Work = () => {
     const handleSlideChange = (swiper) =>{
           const currentIndex = swiper.activeIndex;
           setProject(projects[currentIndex]);
-    }
+     }
 
-    // useEffect(() => {
-    //   const wow = new WOW.WOW({live: false});
-    //   wow.init();
-      
-    // });
-    
-   
-    
     return (
       <>
     
@@ -117,7 +71,7 @@ const Work = () => {
                     <div className="flex flex-col gap-[30px] h-[50%]">
                         <div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
                         <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                        {project.category} project
+                        {project.title} 
                         </h2>
                         <p className="text-white/60">{project.description}</p>
                         <ul className="flex g-4">
@@ -133,19 +87,19 @@ const Work = () => {
                         <div className="border border-white/20"></div>
                           <div className="flex items-center gap-4">
                             {/* Live Project Button */}
-                            <Link href={project.live}>
                               <TooltipProvider delayDuration={100}>
                                 <Tooltip>
+                                  <Link href={project.live} passHref target="_blank" rel="noopener noreferral">
                                     <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex 
                                     justify-center items-center group">
-                                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent"/>
+                                     <BsArrowUpRight className="text-white text-3xl group-hover:text-accent"/>
                                     </TooltipTrigger>
+                                    </Link>
                                     <TooltipContent>
                                         <p>Live project</p>
                                     </TooltipContent>
                                 </Tooltip>
                               </TooltipProvider>
-                            </Link>
                             {/* Github Project Button */}
                             <Link href={project.github}>
                               <TooltipProvider delayDuration={100}>
@@ -175,8 +129,8 @@ const Work = () => {
                             <SwiperSlide key={index} className="w-full">
                                 <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                                    <div className="relative w-full h-full ">
-                                        <Image src={project.image} priority fill className="object-cover" alt="Project image" />
+                                    <div className="relative h-full w-full">
+                                        <Image src={project.image} priority fill className="object-fill" alt="Project image" />
                                     </div>
                                 </div>
                             </SwiperSlide>

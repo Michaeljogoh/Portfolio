@@ -7,23 +7,23 @@ import { motion } from "framer-motion"
 const services = [
     {
         num:"01",
-        title:"Web Development",
-        description:"Lorem ipsum dolor sit aint. Tempore amet molestias necmpora dolorum ratione sit!"
+        title:"Software Development",
+        description:"Proficient in designing, programming, testing, and maintaining software applications."
     },
     {
         num:"02",
         title:"Backend Development",
-        description:"Lorem ipsum dolor sit aint. Tempore amet molestias necmpora dolorum ratione sit!"
+        description:"Expert in server-side of  software applications and database",
     },
     {
         num:"03",
-        title:"UI/UX Design",
-        description:"Lorem ipsum dolor sit aint. Tempore amet molestias necmpora dolorum ratione sit!"
+        title:"Full Stack Development",
+        description:"Proficient in working with both the frontend and the backend technologies that power the application's logic and data handling."
     },
     {
         num:"04",
-        title:"Logo Design",
-        description:"Lorem ipsum dolor sit aint. Tempore amet molestias necmpora dolorum ratione sit!"
+        title:"System Design",
+        description:"Advanced in  defining the architecture, components, modules, interfaces, and data for a system to satisfy specified requirements."
     },
 ]
 
