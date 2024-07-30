@@ -12,9 +12,19 @@ import Link from "next/link";
 
 const projects = [
   {
+    category:"backend",
+    title:"REST-Backend-Task",
+    stack:[{name:"Nest.js"}, {name:"RabbitMQ"}, {name:"MongoDB"}, {name:"Jest"}],
+    image:company,
+    live:"",
+    github:"https://github.com/Michaeljogoh/REST-Backend-Task",
+    all:"all",
+    delay:"1.0s"
+  },
+  {
       category:"frontend",
       title:"Michael's Portfolio",
-      stack:[{name:"Html 5"}, {name:"Css 3"}, {name:"Javascript"}],
+      stack:[{name:"Next.Js"}, {name:"Motion-framer"}, {name:"Typescript"}, {name:"Tailwind"}],
       image:company,
       live:"https://michaeljogoh.vercel.app/",
       github:"https://github.com/Michaeljogoh/Portfolio",
@@ -42,16 +52,17 @@ const projects = [
       delay:"0.4s"
     },
  
-    {
-      category:"backend",
-      title:"Backend Developer",
-      stack:[{name:"Html 5"}, {name:"Css 3"}, {name:"Javascript"}],
-      image:company,
-      live:"",
-      github:"",
-      all:"all",
-      delay:"1.0s"
-    },
+    // {
+    //   category:"backend",
+    //   title:"Backend Developer",
+    //   stack:[{name:"Html 5"}, {name:"Css 3"}, {name:"Javascript"}],
+    //   image:company,
+    //   live:"",
+    //   github:"",
+    //   all:"all",
+    //   delay:"1.0s"
+    // },
+
 ]
 
 
