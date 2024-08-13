@@ -22,7 +22,7 @@ export default function Home() {
            {/* CV  */}
           <div className="flex flex-col xl:flex-row items-center gap-8">
             <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-            <a href="/marketing.docx" download="cv">
+            <a href="michael-jogoh.pdf" download="Michael-Jogoh-Resume">
             <span>Download CV</span>
             </a>
             <FiDownload className="text-xl" />
